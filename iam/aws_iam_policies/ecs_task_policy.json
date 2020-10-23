@@ -1,0 +1,23 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ssm:GetParameters",
+                "secretsmanager:GetSecretValue",
+                "kms:Decrypt",
+                "ecr:GetAuthorizationToken",
+                "ecr:BatchCheckLayerAvailability",
+                "ecr:GetDownloadUrlForLayer",
+                "ecr:BatchGetImage",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents",
+                "iam:Get*",
+                "iam:List*",
+                "iam:PassRole"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
